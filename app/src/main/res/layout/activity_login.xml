@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgPolicemanLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/ic_policeman"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criminal Record"
+        android:textColor="#000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_margin="10.0dp"
+        android:fontFamily="cursive"/>
+
+    <EditText
+        android:id="@+id/edtSigninEmail"
+        android:layout_width="320sp"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/edt_form_bg_file"
+        android:layout_gravity="center"
+        android:hint="Email"
+        android:drawableStart="@drawable/ic_mail_grey_24dp"
+        android:textColorHint="#797979"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:elevation="10dp"/>
+
+    <EditText
+        android:id="@+id/edtSigninPassword"
+        android:layout_margin="10dp"
+        android:layout_width="320sp"
+        android:layout_height="0dp"
+        android:inputType="textPassword"
+        android:layout_weight="0.8"
+        android:background="@drawable/edt_form_bg_file"
+        android:layout_gravity="center"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:hint="Password"
+        android:singleLine="true"
+        android:drawableStart="@drawable/ic_password_grey_24dp"
+        android:padding="10dp"
+        android:textColorHint="#797979"
+        android:textColor="#fff"
+        android:elevation="10dp"/>
+
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_login_register_bg"
+        android:elevation="10dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+</LinearLayout>
