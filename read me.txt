@@ -1,3 +1,26 @@
+Softwares Required:
+
+1) Xampp or Wampp with PHP above 7.3.*
+
+2)Vscode or sublime text or any other editor.
+
+3)Android Studio.
+
+4)Web Browser
+
+
+Technologies Used:
+
+1)Laravel PHP
+
+2)MYSQL Database
+
+3)SQLITE DB
+
+4)Android Native (JAVA)
+
+Steps To Intall Web Server:
+
 1) To install laravel project on your device run following command in the directory through cmd in (xampp/htdocs)
 
 	composer create-project laravel/laravel
@@ -25,7 +48,18 @@
 
 	=> 127.0.0.1:8000
 
+Steps TO Run Android APP: 
+1) Open project in android studio.
 
+2) Click Build Button.
+
+3) Connect android to pc via USB cable.
+
+4)Go to settings and turn on USB debuggin.
+
+5)I adroid studio clickRUn Button and choose the connected mobile device.
+
+6)The application will run after a short interval.
 	
 
 
