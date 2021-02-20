@@ -1,71 +1,37 @@
-//Need
+1) To install laravel project on your device run following command in the directory through cmd in (xampp/htdocs)
 
-In this Era it's our need to use the latest technologies for our country entire system as we all know that in our country the record are still manged 
-on paper and it's hard to find the record on spot. Need of this system starts from here that in now a days crime rate is too much high and it's difficult to 
-manage there record in differen areas of our country, manay prisoners are still in lockup and many criminals were released and some of them are still doing 
-criminal activities and after they had caught some of there record will be missing because it's not centrilized at any place.  We are introducing this system for managing
-the records of the criminals and in this system the whole country jails will have centerlized database. Which will help our Agencies to access the record of any 
-criminal with in time and they will be able to know his history within short period of time.
+	composer create-project laravel/laravel
 
+2) Create a new database on localhost/phpmyadmin -> make sure you have installed xampp on you device
 
+3) In laravel project open file .env and mention name of database in front of (DB_DATABASE)
 
-//Working
+4) Then run the following command 
 
+	 => php artisan config:cache
 
+5) Then run following command
 
-This system has android module and a server modules. Agencies who'll use this system login to the system and entered the record of the criminals capture the images 
-of criminals and that image will be sent to the server. After sending that image to the server server will be responsible for training that image. In training phase
-server will pick multiple images sent from agencies and train them like fixing there coordinates and angles according to its recognition phase and then store them 
-in database. After this phase server pick up those images and match them with database all previously store images by matching there coordinates and angles which 
-server had already stored in database. Now there are two type of responses which will be returned by the server after recognition of image it'll be positive or 
-negative reponse. if the image will be recognised server will pickup it's all data and it's crime history and return to the agencies and ask for the new record 
-entery, and if there is no record found then it'll just return no record found and it'll ask agencies to enter the criminals record.
+	 => php artisan migrate:refresh --seed
 
+6) Then run the following command
 
-On Server Side there is also Login model which will connect you to the database and user will be able to see the whole record of all the criminals and he'll be
-able to see his all records and all the crimes which he'd attempted he'll be able to see its full history name, address, crimes etc everything which will be 
-collected by the users.
+	=> php artisan serve
+
+7) Make sure you have turned on xampp
 
 
+8) To run this project locally on your browser-> url as
 
-//Features
+	=> 127.0.0.1:8000
+
+
+	
 
 
 
-01-  Image Capturing
-02-  Image Training
-03-  Setting Cordinates of Image
-04-  Setting Angles of Image
-05-  Storing Image
-06-  Image Recognition
-07-  Matching Coordinates
-08-  Matching Angles
-09-  Sending Response
-10- Getting New Records of Criminal
 
 
-
-//Technoligies
-
-
-
-01- PHP Laravel
-02- Android
-
-
-
-//How to Use
-
-
-
-User will login to the system he'll enter the details of the Criminal. After that user will upload the crimal's Images and the server will perform operations
-on those images. First server will train those images and then recognise them by matching them from database and return the response to the user. If the image
-will be recognised server will pickup it's all data and it's crime history and return to the user and ask for the new record entery, and if there is no 
-record found then it'll just return no record found and it'll ask user to enter the criminals record.
-
-On Server Side there is also Login Model which will connect you to the database and user will be able to see the whole record of all the criminals and 
-he'll be able to see his all records and all the crimes which he'd attempted he'll be able to see its full history name, address, crimes etc everything 
-which will be collected by the users.
 
 
 
